@@ -1,0 +1,1 @@
+const { Merchandise } = require('../models');
