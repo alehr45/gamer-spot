@@ -1,27 +1,35 @@
-// import models
+// Import models
 const Accessory = require('./Accessory');
 const Category = require('./Category');
 const Console = require('./Console');
 const Game = require('./Game');
 const Merchandise = require('./Merchandise');
 
-// Products belongsTo Category
-Product.belongsTo(Category, {
-  foreignKey: 'category_id'
+Console.belongsTo(Category, {
+    foreignKey: 'category_id'
 });
-// Categories have many Products
-Category.hasMany(Product, {
-  foreignKey: 'category_id'
+Accessory.belongsTo(Category, {
+    foreignKey: 'category_id'
 });
-// Products belongToMany Tags (through ProductTag)
-Product.belongsToMany(Tag, {
-  through: ProductTag,
-  foreignKey: 'product_id'
+Game.belongsTo(Category, {
+    foreignKey: 'category_id'
 });
-// Tags belongToMany Products (through ProductTag)
-Tag.belongsToMany(Product, {
-  through: ProductTag,
-  foreignKey: 'tag_id'
+Merchandise.belongsTo(Category, {
+    foreignKey: 'category_id'
+});
+
+// Category
+Category.hasMany(Console, {
+    foreignKey: 'category_id'
+});
+Category.hasMany(Accessory, {
+    foreignKey: 'category_id'
+});
+Category.hasMany(Game, {
+    foreignKey: 'category_id'
+});
+Category.hasMany(Merchandise, {
+    foreignKey: 'category_id'
 });
 
 module.exports = {
