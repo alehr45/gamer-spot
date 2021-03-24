@@ -15,7 +15,7 @@ Game.init(
       primaryKey: true,
       autoIncrement: true
     },
-    product_name: {
+    game_name: {
       type: DataTypes.STRING,
       allowNull: false,
     },

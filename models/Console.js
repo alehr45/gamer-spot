@@ -15,7 +15,7 @@ Console.init(
       primaryKey: true,
       autoIncrement: true
     },
-    product_name: {
+    console_name: {
       type: DataTypes.STRING,
       allowNull: false,
     },

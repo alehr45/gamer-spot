@@ -1,0 +1,6 @@
+-- DROP DATABASE
+DROP DATABASE IF EXISTS gamerspot_db;
+
+-- CREATE DATABASE
+CREATE DATABASE gamerspot_db;
+USE gamerspot_db;

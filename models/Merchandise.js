@@ -15,7 +15,7 @@ Merchandise.init(
       primaryKey: true,
       autoIncrement: true
     },
-    product_name: {
+    merchandise_name: {
       type: DataTypes.STRING,
       allowNull: false,
     },
