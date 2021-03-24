@@ -1,0 +1,58 @@
+* {
+padding: 0px;
+margin: 0px;
+}
+
+@font-face {
+font-family: Hemi;
+src: url("../assets/fonts/HEMIHEAD.TTF");
+}
+
+.title {
+text-align: center;
+font-family: monospace;
+display: flex;
+justify-content: center;
+}
+
+.level {
+   
+    background-color: rgb(60, 60, 60);
+    padding-bottom: 40px;
+    
+}
+
+.gamerspot {
+    font-family:Hemi;
+    padding-top: 30px;
+    font-size: 70px;
+    color: lawngreen;
+}
+
+.link.is-info {
+    font-family:Hemi;
+    padding-top: 30px;
+    font-size: 30px;
+    color: whitesmoke;
+}
+
+.footer1 {
+    font-size:25px ;
+    font-family:Hemi;
+    color: whitesmoke;
+    padding-top: 30px;
+    background-color: rgb(60, 60, 60);
+    height: 100px;
+}
+
+.image {
+    
+    padding: 0px;
+}
+
+.consoles {
+    padding-left: 40px;
+    padding-bottom: 25px;
+    display: flex;
+    justify-content: space-evenly;
+}
