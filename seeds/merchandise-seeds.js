@@ -2,13 +2,22 @@ const { Merchandise } = require('../models');
 
 const merchandiseData = [
     {
-      system_name: 'Microsoft',
+      merchandise_name: 'Teddy Bear',
+      price: 59.99,
+      stock: 25,
+      category_id: 4,
     },
     {
-      system_name: 'Sony',
+      merchandise_name: 'T-shirt',
+      price: 59.99,
+      stock: 25,
+      category_id: 4,
     },
     {
-      system_name: 'Nintendo',
+      merchandise_name: 'Hat',
+      price: 59.99,
+      stock: 25,
+      category_id: 4,
     }
   ];
   

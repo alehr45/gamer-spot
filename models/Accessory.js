@@ -15,7 +15,7 @@ Accessory.init(
       primaryKey: true,
       autoIncrement: true
     },
-    product_name: {
+    accessory_name: {
       type: DataTypes.STRING,
       allowNull: false,
     },

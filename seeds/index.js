@@ -2,17 +2,17 @@ const seedAccessories = require('./accessory-seeds');
 const seedConsoles = require('./console-seeds');
 const seedGames = require('./game-seeds');
 const seedMerchandise = require('./merchandise-seeds');
-const seedSystems = require('./category-seeds');
+const seedCategories = require('./category-seeds');
 
 const sequelize = require('../config/connection');
-const seedSystems = require('./category-seeds');
+
 
 const seedAll = async () => {
   await sequelize.sync({ force: true });
   console.log('\n----- DATABASE SYNCED -----\n');
 
-  await seedSystems();
-  console.log('\n----- SYSTEMS SEEDED -----\n');
+  await seedCategories();
+  console.log('\n----- CATEGORIES SEEDED -----\n');
 
   await seedAccessories();
   console.log('\n----- ACCESSORIES SEEDED -----\n');
