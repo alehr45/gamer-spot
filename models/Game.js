@@ -3,10 +3,9 @@ const { Model, DataTypes } = require('sequelize');
 // import our database connection from config.js
 const sequelize = require('../config/connection');
 
-// Initialize Product model (table) by extending off Sequelize's Model class
+// Initialize Game model (table) by extending off Sequelize's Model class
 class Game extends Model {}
 
-// set up fields and rules for Product model
 Game.init(
   {
     // define columns
