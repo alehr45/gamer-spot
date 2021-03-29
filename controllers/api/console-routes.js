@@ -52,6 +52,9 @@ router.post('/', (req, res) => {
   // create a new console
   Console.create({
     console_name: req.body.console_name,
+    price: req.body.price,
+    stock: req.body.stock,
+    category_id: req.body.category_id
   })
     .then(dbConsoleData => res.json(dbConsoleData))
     .catch(err => {
@@ -62,14 +65,16 @@ router.post('/', (req, res) => {
 
 router.put('/:id', (req, res) => {
   // update a console by its `id` value
-  Console.update(
-    {
-      console_name: req.body.console_name
+  Console.update({
+      console_name: req.body.console_name,
+      price: req.body.price,
+      stock: req.body.stock,
+      category_id: req.body.category_id
     },
     {
       where: {
         id: req.params.id
-      }
+      },
     }
   )
     .then(dbConsoleData => {
