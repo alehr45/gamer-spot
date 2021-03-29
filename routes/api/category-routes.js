@@ -8,21 +8,22 @@ router.get('/', (req, res) => {
   Category.findAll({
   // be sure to include its associated Products
   include: [
+
     {
       model: Console,
-      attributes: ['category_id']
+      attributes: ['category_id', 'price', 'stock', 'console_name']
     },
     {
       model: Accessory,
-      attributes: ['category_id']
+      attributes: ['category_id', 'price', 'stock', 'accessory_name']
     },
     {
       model: Game,
-      attributes: ['category_id']
+      attributes: ['category_id', 'price', 'stock', 'game_name']
     },
     {
       model: Merchandise,
-      attributes: ['category_id']
+      attributes: ['category_id', 'price', 'stock', 'merchandise_name']
     },
   ]
   })
@@ -39,13 +40,6 @@ router.get('/:id', (req, res) => {
     where: {
       id: req.params.id
     },
-    // // be sure to include its associated Products
-    // include: [
-    //   {
-    //     model: Category,
-    //     attributes: ['category_name']
-    //   }
-    // ]
   })
     .then(dbCategoryData => {
       if (!dbCategoryData) {
@@ -74,15 +68,15 @@ router.post('/', (req, res) => {
 
 router.put('/:id', (req, res) => {
   // update a category by its `id` value
-  Category.update(
-    {
-      category_name: req.body.category_name
+  Category.update({
+    where: {
+      id: req.params.id
     },
-    {
-      where: {
-        id: req.params.id
-      }
-    }
+      category_name: req.body.category_name,
+      price: req.body.price,
+      stock: req.body.stock,
+      category_id: req.body.category_id
+    },
   )
     .then(dbCategoryData => {
       if (!dbCategoryData) {

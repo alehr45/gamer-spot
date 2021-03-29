@@ -52,6 +52,9 @@ router.post('/', (req, res) => {
   // create a new game
   Game.create({
     game_name: req.body.game_name,
+    price: req.body.price,
+    stock: req.body.stock,
+    category_id: req.body.category_id
   })
     .then(dbGameData => res.json(dbGameData))
     .catch(err => {
@@ -62,14 +65,16 @@ router.post('/', (req, res) => {
 
 router.put('/:id', (req, res) => {
   // update a game by its `id` value
-  Game.update(
-    {
-      game_name: req.body.game_name
+  Game.update({
+      game_name: req.body.game_name,
+      price: req.body.price,
+      stock: req.body.stock,
+      category_id: req.body.category_id
     },
     {
       where: {
         id: req.params.id
-      }
+      },
     }
   )
     .then(dbGameData => {

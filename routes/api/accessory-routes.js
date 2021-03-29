@@ -52,6 +52,9 @@ router.post('/', (req, res) => {
   // create a new accessory
   Accessory.create({
     accessory_name: req.body.accessory_name,
+    price: req.body.price,
+    stock: req.body.stock,
+    category_id: req.body.category_id
   })
     .then(dbAccessoryData => res.json(dbAccessoryData))
     .catch(err => {
@@ -62,14 +65,16 @@ router.post('/', (req, res) => {
 
 router.put('/:id', (req, res) => {
   // update an accessory by its `id` value
-  Accessory.update(
-    {
-      accessory_name: req.body.accessory_name
+  Accessory.update({
+      accessory_name: req.body.accessory_name,
+      price: req.body.price,
+      stock: req.body.stock,
+      category_id: req.body.category_id
     },
     {
       where: {
         id: req.params.id
-      }
+      },
     }
   )
     .then(dbAccessoryData => {
