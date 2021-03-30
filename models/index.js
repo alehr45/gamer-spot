@@ -4,6 +4,7 @@ const Category = require('./Category');
 const Console = require('./Console');
 const Game = require('./Game');
 const Merchandise = require('./Merchandise');
+const User = require('./User');
 
 Console.belongsTo(Category, {
     foreignKey: 'category_id'
@@ -37,5 +38,6 @@ module.exports = {
   Category,
   Console,
   Game,
-  Merchandise
+  Merchandise,
+  User
 };
