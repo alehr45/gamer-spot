@@ -1,1 +1,10 @@
-<div>Welcome to GamerSpot</div>
+<div>Welcome to GamerSpot Home Page</div>
+<div>
+    <h1>Here are the products: 
+        {{#each category}} 
+            <li>{{product_name}}</li>
+            <li>{{price}}</li>
+            <li>{{stock}}</li>
+        {{/each}}
+    </h1>
+</div>

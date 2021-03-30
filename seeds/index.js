@@ -1,7 +1,4 @@
-const seedAccessories = require('./accessory-seeds');
-const seedConsoles = require('./console-seeds');
-const seedGames = require('./game-seeds');
-const seedMerchandise = require('./merchandise-seeds');
+const seedProducts = require('./product-seeds');
 const seedCategories = require('./category-seeds');
 
 const sequelize = require('../config/connection');
@@ -14,17 +11,8 @@ const seedAll = async () => {
   await seedCategories();
   console.log('\n----- CATEGORIES SEEDED -----\n');
 
-  await seedAccessories();
-  console.log('\n----- ACCESSORIES SEEDED -----\n');
-
-  await seedConsoles();
-  console.log('\n----- CONSOLES SEEDED -----\n');
-
-  await seedGames();
-  console.log('\n----- GAMES SEEDED -----\n');
-
-  await seedMerchandise();
-  console.log('\n----- MERCHANDISE SEEDED -----\n');
+  await seedProducts();
+  console.log('\n----- PRODUCTS SEEDED -----\n');
 
   process.exit(0);
 };

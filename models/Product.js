@@ -3,19 +3,19 @@ const { Model, DataTypes } = require('sequelize');
 // import our database connection from config.js
 const sequelize = require('../config/connection');
 
-// Initialize Accessory model (table) by extending off Sequelize's Model class
-class Accessory extends Model {}
+// Initialize Product model (table) by extending off Sequelize's Model class
+class Product extends Model {}
 
-Accessory.init(
+Product.init(
   {
-    // Defines columns
+    // define columns
     id: {
       type: DataTypes.INTEGER,
       allowNull: false,
       primaryKey: true,
       autoIncrement: true
     },
-    accessory_name: {
+    product_name: {
       type: DataTypes.STRING,
       allowNull: false,
     },
@@ -47,8 +47,8 @@ Accessory.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'accessory',
+    modelName: 'product',
   }
 );
 
-module.exports = Accessory;
+module.exports = Product;
