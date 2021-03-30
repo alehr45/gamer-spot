@@ -13,6 +13,6 @@ Category.hasMany(Product, {
 
 module.exports = {
   Category,
-  Products,
+  Product,
   User
 };
