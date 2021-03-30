@@ -1,6 +1,7 @@
 // Import models
 const Category = require('./Category');
 const Product = require('./Product');
+const User = require('./User');
 
 Product.belongsTo(Category, {
     foreignKey: 'category_id'
@@ -12,5 +13,6 @@ Category.hasMany(Product, {
 
 module.exports = {
   Category,
-  Product
+  Products,
+  User
 };
