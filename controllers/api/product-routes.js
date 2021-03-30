@@ -1,11 +1,12 @@
 const router = require('express').Router();
-const { Accessory, Category } = require('../../models');
+const { Product, Category } = require('../../models');
 
-// The `/api/accessories` endpoint
+// The `/api/products` endpoint
 
 router.get('/', (req, res) => {
-  // find all accessories
-  Accessory.findAll({
+  // find all products
+  Product.findAll({
+    attributes: ['id', 'category_id', 'price', 'stock', 'product_name'],
   // be sure to include its associated Products
   include: [
     {
@@ -14,7 +15,7 @@ router.get('/', (req, res) => {
     }
   ]
   })
-  .then(dbAccessoryData => res.json(dbAccessoryData))
+  .then(dbProductData => res.json(dbProductData))
     .catch(err => {
       console.log(err);
       res.status(500).json(err);
@@ -22,8 +23,8 @@ router.get('/', (req, res) => {
 });
 
 router.get('/:id', (req, res) => {
-  // find one accessory by its `id` value
-  Accessory.findOne({
+  // find one product by its `id` value
+  Product.findOne({
     where: {
       id: req.params.id
     },
@@ -35,12 +36,12 @@ router.get('/:id', (req, res) => {
       }
     ]
   })
-    .then(dbAccessoryData => {
-      if (!dbAccessoryData) {
-        res.status(404).json({ message: 'No accessories found with this id' });
+    .then(dbProductData => {
+      if (!dbProductData) {
+        res.status(404).json({ message: 'No Product found with this id' });
         return;
       }
-      res.json(dbAccessoryData);
+      res.json(dbProductData);
     })
     .catch(err => {
       console.log(err);
@@ -49,14 +50,14 @@ router.get('/:id', (req, res) => {
 });
 
 router.post('/', (req, res) => {
-  // create a new accessory
-  Accessory.create({
-    accessory_name: req.body.accessory_name,
+  // create a new product
+  Product.create({
+    product_name: req.body.product_name,
     price: req.body.price,
     stock: req.body.stock,
     category_id: req.body.category_id
   })
-    .then(dbAccessoryData => res.json(dbAccessoryData))
+    .then(dbProductData => res.json(dbProductData))
     .catch(err => {
       console.log(err);
       res.status(500).json(err);
@@ -64,9 +65,9 @@ router.post('/', (req, res) => {
 });
 
 router.put('/:id', (req, res) => {
-  // update an accessory by its `id` value
-  Accessory.update({
-      accessory_name: req.body.accessory_name,
+  // update a product by its `id` value
+  Product.update({
+      product_name: req.body.product_name,
       price: req.body.price,
       stock: req.body.stock,
       category_id: req.body.category_id
@@ -77,12 +78,12 @@ router.put('/:id', (req, res) => {
       },
     }
   )
-    .then(dbAccessoryData => {
-      if (!dbAccessoryData) {
-        res.status(404).json({ message: 'No accessory found with this id' });
+    .then(dbProductData => {
+      if (!dbProductData) {
+        res.status(404).json({ message: 'No Product found with this id' });
         return;
       }
-      res.json(dbAccessoryData);
+      res.json(dbProductData);
     })
     .catch(err => {
       console.log(err);
@@ -91,18 +92,18 @@ router.put('/:id', (req, res) => {
 });
 
 router.delete('/:id', (req, res) => {
-  // delete an accessory by its `id` value
-  Accessory.destroy({
+  // delete a product by its `id` value
+  Product.destroy({
     where: {
       id: req.params.id
     }
   })
-    .then(dbAccessoryData => {
-      if (!dbAccessoryData) {
-        res.status(404).json({ message: 'No accessory found with this id' });
+    .then(dbProductData => {
+      if (!dbProductData) {
+        res.status(404).json({ message: 'No Product found with this id' });
         return;
       }
-      res.json(dbAccessoryData);
+      res.json(dbProductData);
     })
     .catch(err => {
       console.log(err);
