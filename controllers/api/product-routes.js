@@ -1,8 +1,6 @@
 const router = require('express').Router();
 const { Product, Category } = require('../../models');
-
 // The `/api/products` endpoint
-
 router.get('/', (req, res) => {
   // find all products
   Product.findAll({
@@ -21,7 +19,6 @@ router.get('/', (req, res) => {
       res.status(500).json(err);
     });
 });
-
 router.get('/:id', (req, res) => {
   // find one product by its `id` value
   Product.findOne({
@@ -29,6 +26,7 @@ router.get('/:id', (req, res) => {
       id: req.params.id
     },
     // be sure to include its associated Products
+    attributes: ['id', 'category_id', 'price', 'stock', 'product_name'],
     include: [
       {
         model: Category,
@@ -48,7 +46,6 @@ router.get('/:id', (req, res) => {
       res.status(500).json(err);
     });
 });
-
 router.post('/', (req, res) => {
   // create a new product
   Product.create({
@@ -63,7 +60,6 @@ router.post('/', (req, res) => {
       res.status(500).json(err);
     });
 });
-
 router.put('/:id', (req, res) => {
   // update a product by its `id` value
   Product.update({
@@ -90,7 +86,6 @@ router.put('/:id', (req, res) => {
       res.status(500).json(err);
     });
 });
-
 router.delete('/:id', (req, res) => {
   // delete a product by its `id` value
   Product.destroy({
@@ -110,5 +105,4 @@ router.delete('/:id', (req, res) => {
       res.status(500).json(err);
     });
 });
-
 module.exports = router;

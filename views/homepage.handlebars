@@ -1,40 +1,46 @@
-    <div class="nav"></div>
-        <nav class="level">
-          <p class="level-item has-text-centered">
-            <a class="link is-info">Buy</a>
-          </p>
-          <p class="level-item has-text-centered">
-            <a class="link is-info">Sell</a>
-          </p>
-          <p class="level-item has-text-centered">
-              <a class=" gamerspot">GamerSpot</a>
-          </p>
-          <p class="level-item has-text-centered">
-            <a class="link is-info">In Stock</a>
-          </p>
-          <p class="level-item has-text-centered">
-            <a class="link is-info">Contact</a>
-          </p>
-        </nav>
-      </div>
+<div class="nav"></div>
+<nav class="level">
+    <p class="level-item has-text-centered">
+        <a class="link is-info">Games</a>
+    </p>
+    <p class="level-item has-text-centered">
+        <a class="link is-info">Consoles</a>
+    </p>
+    <p class="level-item has-text-centered">
+        <a class="link is-info">Buy/Sell</a>
+    </p>
+    <p class="level-item has-text-centered">
+        <a class=" gamerspot">GamerSpot</a>
+    </p>
+    <p class="level-item has-text-centered">
+        <a class="link is-info">Accessories</a>
+    </p>
+    <p class="level-item has-text-centered">
+        <a class="link is-info">Merch</a>
+    </p>
+    <p class="level-item has-text-centered">
+        <img class="cart" src="/images/cart.png" height="35px" width="35px" />
+    </p>
+</nav>
+</div>
       
+   
     <section>
-      <img class="banner" src="../../public/images/mw4.png"  alt="Game of the Week">
-      <div class="consoles">
-        <img class="xbox" src="/public/images/xbox.png" height="170" width= "170"/>
-        <img class="playstaion" src="/public/images/playstation.png" height="170" width= "220"/>
-        <img class="nintendo" src="/public/images/nintendo.png" height="180" width= "330"/>
-        <img class="merch" src="/public/images/merch.png" height="220" width= "220"/>
-        <img class="access" src="/public/images/access.png" height="220" width= "230"/>
-      </div>
-    </section>
+      
+<div>
+<img class="banner" src="/images/mw4.png"  alt="Game of the Week">
 
-{{!-- <div>
+</div>
+      
+      </section>
+
+       <div>
     <h1>Here are the products: 
-        {{#each category}} 
-            <li>{{product_name}}</li>
-            <li>{{price}}</li>
-            <li>{{stock}}</li>
+        {{#each product}} 
+        {{product_name}}
         {{/each}}
     </h1>
-</div> --}}
+</div> 
+
+    </section>
+
