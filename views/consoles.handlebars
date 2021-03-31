@@ -7,7 +7,7 @@
         <a class="link is-info">Consoles</a>
     </p>
     <p class="level-item has-text-centered">
-        <a class="link is-info">Buy/Sell</a>
+        <a class="link is-info">Buy/Sell</a
     </p>
     <p class="level-item has-text-centered">
         <a class=" gamerspot">GamerSpot</a>
@@ -23,28 +23,18 @@
     </p>
 </nav>
 </div>
-      
-   
 
-<div class="card">
-      
-      <form id="signup-form" class="card-body">
-        
-        <label for="username-signup" class="form-label">Username </label>
-        <input id="username-signup" type="text" class="form-input" />
+<section>
 
-
-        <label class="form-label" for="password-signup">Password </label>
-        <input  id="password-signup" type="password" class="form-input" />
-
-        <button type="submit" class="btn">Signup!</button>
-        <a class="login-link" href="/login">Already a member? Log In</a>
-      </form>
-    </div>
-
-    <div>
-<img class="banner" src="/images/mw4.png"  alt="Game of the Week">
-
+<div>
 </div>
 
-<script src="/javascript/signup.js"></script>
+</section>
+<div>
+{{#each product}} 
+{{product_name}}
+{{/each}}
+    </div>
+
+
+</section>

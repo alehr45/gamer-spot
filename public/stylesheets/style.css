@@ -13,9 +13,18 @@
 
 .level {
   background-color: rgb(48, 48, 48);
-
 }
 
+.cart {
+
+  padding-top: 20px;
+}
+
+.card-body {
+padding-bottom: 20px;
+display: flex;
+justify-content: center;
+}
 .gamerspot {
   font-family: Hemi;
   padding-top: 30px;
@@ -26,22 +35,44 @@
 .link.is-info {
   font-family: Hemi;
   padding-top: 30px;
-  font-size: 30px;
+  font-size: 25px;
   color: whitesmoke;
 }
 
 .footer1 {
-  font-size: 25px;
+  font-size: 15px;
   font-family: Hemi;
   color: whitesmoke;
-  padding-top: 30px;
+  padding-top: 40px;
   background-color: rgb(48, 48, 48);
   height: 100px;
 }
 
+.form-input{
+  padding-right: 10px;
+  padding-left: 10px;
+
+}
+
+.login-link {
+  font-family: Hemi;
+  font-size: 25px;
+  color: rgb(81, 159, 4);
+  padding-left: 10px;
+}
+
+.form-label {
+  display: flex;
+  padding: 2px;
+margin: 2px;
+}
+
 .card-header {
+  display: flex;
+  justify-content: center;
   font-family: Hemi;
   font-size: 40px;
+  padding: 20px;
 }
 
 .consoles {
