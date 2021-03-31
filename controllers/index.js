@@ -4,7 +4,7 @@ const homeRoutes = require('./home-routes.js');
 const consoleRoutes = require('./console-routes.js');
 
 router.use('/api', apiRoutes);
-
+router.use('/consoles', consoleRoutes);
 router.use('/', homeRoutes);
 router.use('/consoles', consoleRoutes);
 
