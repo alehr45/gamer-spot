@@ -1,7 +1,9 @@
 const router = require('express').Router();
 const sequelize = require('../config/connection');
 const { Category, Product } = require('../models');
+
 // The `/api/categories` endpoint
+
 router.get('/', (req, res) => {
   // find all categories
   Product.findAll({
@@ -10,7 +12,7 @@ router.get('/', (req, res) => {
     include: [
       {
         model: Category,
-        attributes: ['category_name'],
+        attributes: ['category_name', 'id'],
       }
     ]
   })
@@ -23,7 +25,9 @@ router.get('/', (req, res) => {
       res.status(500).json(err);
     });
 });
-router.get('/', (req, res) => {
+
+
+router.get('/consoles/:id', (req, res) => {
   // find all categories
   Product.findOne({
     where: {
@@ -54,7 +58,11 @@ router.get('/login', (req, res) => {
   }
   res.render('login');
 });
+
 module.exports = router;
+
 router.get('/signup', (req, res) => {
   res.render('signup');
 });
+
+

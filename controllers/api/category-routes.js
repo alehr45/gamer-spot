@@ -27,6 +27,13 @@ router.get('/:id', (req, res) => {
     where: {
       id: req.params.id
     },
+    attributes: ['category_name'],
+    include: [
+      {
+        model: Product,
+        attributes: ['category_id', 'price', 'stock', 'product_name'],
+      }
+    ]
   })
     .then(dbCategoryData => {
       if (!dbCategoryData) {
