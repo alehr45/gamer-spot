@@ -15,14 +15,15 @@ router.get('/', (req, res) => {
   })
   .then((dbProductData) => {
     const product = dbProductData.map(product => product.get({plain: true }));
-    res.render('consoles', {product});
+    res.render('games', {product});
     })
     .catch(err => {
       console.log(err);
       res.status(500).json(err);
     });
 });
-router.get('/consoles/:id', (req, res) => {
+
+router.get('/games/:id', (req, res) => {
   // find one product
   Product.findOne({
     where: {
@@ -38,13 +39,14 @@ router.get('/consoles/:id', (req, res) => {
   })
   .then((dbProductData) => {
     const product = dbProductData.map(product => product.get({plain: true }));
-    res.render('consoles', {product});
+    res.render('games', {product});
     })
     .catch(err => {
       console.log(err);
       res.status(500).json(err);
     });
 });
+
 router.get('/', (req, res) => {
     // find all categories
     Category.findAll({
@@ -58,14 +60,16 @@ router.get('/', (req, res) => {
     })
     .then((dbCategoryData) => {
         const category = dbCategoryData.map(category => category.get({plain: true }));
-        res.render('consoles', {category});
+        res.render('games', {category});
         })
         .catch(err => {
         console.log(err);
         res.status(500).json(err);
     });
 });
-router.get('/consoles/:id', (req, res) => {
+
+
+router.get('/games/:id', (req, res) => {
     // find one category
     Category.findOne({
     where:{
@@ -81,7 +85,7 @@ router.get('/consoles/:id', (req, res) => {
     })
     .then((dbCategoryData) => {
         const category = dbCategoryData.map(category => category.get({plain: true }));
-        res.render('consoles', {category});
+        res.render('games', {category});
         })
         .catch(err => {
         console.log(err);

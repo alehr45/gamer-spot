@@ -210,77 +210,77 @@ const productData = [
     category_id: 3,
   },
   {
-    product_name: 'xbox controller',
+    product_name: 'Xbox Controller',
     price: 1.99,
     stock: 13,
     console_id: 1,
     category_id: 1
 },
 {
-    product_name: 'xbox headset',
+    product_name: 'Xbox Headset',
     price: 1.99,
     stock: 13,
     console_id: 1,
     category_id: 1
 },
 {
-    product_name: 'xbox controller battery-pack',
+    product_name: 'Xbox Controller Battery-Pack',
     price: 1.99,
     stock: 13,
     console_id: 1,
     category_id: 1
 },
 {
-    product_name: 'xbox battery charging station',
+    product_name: 'Xbox Battery Charging Station',
     price: 1.99,
     stock: 13,
     console_id: 1,
     category_id: 1
 },
 {
-    product_name: 'playstation controller',
+    product_name: 'Playstation Controller',
     price: 1.99,
     stock: 13,
     console_id: 1,
     category_id: 1
 },
 {
-    product_name: 'playstation headset',
+    product_name: 'Playstation Headset',
     price: 1.99,
     stock: 13,
     console_id: 1,
     category_id: 1
 },
 {
-    product_name: 'playstation controller battery-pack',
+    product_name: 'Playstation Controller Battery-Pack',
     price: 1.99,
     stock: 13,
     console_id: 1,
     category_id: 1
 },
 {
-    product_name: 'playstation battery charging station',
+    product_name: 'Playstation Battery Charging Station',
     price: 1.99,
     stock: 13,
     console_id: 1,
     category_id: 1
 },
 {
-    product_name: 'nintendo controller',
+    product_name: 'Nintendo Controller',
     price: 1.99,
     stock: 13,
     console_id: 1,
     category_id: 1
 },
 {
-    product_name: 'nintendo headset',
+    product_name: 'Nintendo Headset',
     price: 1.99,
     stock: 13,
     console_id: 1,
     category_id: 1
 },
 {
-    product_name: 'nintendo charging station',
+    product_name: 'Nintendo Charging Station',
     price: 1.99,
     stock: 13,
     console_id: 1,
