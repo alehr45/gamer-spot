@@ -2,13 +2,12 @@ const router = require('express').Router();
 const sequelize = require('../config/connection');
 const { Category, Product } = require('../models');
 
-// The `/api/categories` endpoint
+// The `/consoles` endpoints
 
 router.get('/', (req, res) => {
-  // find all categories
+  // find all products
   Product.findAll({
     attributes: ['category_id', 'price', 'stock', 'product_name'],
-  // be sure to include its associated Products
     include: [
       {
         model: Category,
@@ -26,15 +25,13 @@ router.get('/', (req, res) => {
     });
 });
 
-
 router.get('/consoles/:id', (req, res) => {
-  // find all categories
+  // find one product
   Product.findOne({
     where: {
       id: req.params.id,
     },
     attributes: ['category_id', 'price', 'stock', 'product_name'],
-  // be sure to include its associated Products
     include: [
       {
         model: Category,
@@ -51,18 +48,62 @@ router.get('/consoles/:id', (req, res) => {
       res.status(500).json(err);
     });
 });
-router.get('/login', (req, res) => {
-  if (req.session.loggedIn) {
-      res.redirect('/');
-      return;
-  }
-  res.render('login');
+
+router.get('/', (req, res) => {
+    // find all categories
+    Category.findAll({
+        attributes: ['category_name', 'id'],
+        include: [
+        {
+            model: Product,
+            attributes: ['category_id', 'price', 'stock', 'product_name'],
+        }
+        ]
+    })
+    .then((dbCategoryData) => {
+        const category = dbCategoryData.map(category => category.get({plain: true }));
+        res.render('consoles', {category});
+        })
+        .catch(err => {
+        console.log(err);
+        res.status(500).json(err);
+    });
 });
 
-module.exports = router;
+router.get('/consoles/:id', (req, res) => {
+    // find one category
+    Category.findOne({
+    where:{
+        id:req.params.id,
+    },
+        attributes: ['category_name'],
+        include: [
+        {
+            model: Product,
+            attributes: ['category_id', 'price', 'stock', 'product_name'],
+        }
+        ]
+    })
+    .then((dbCategoryData) => {
+        const category = dbCategoryData.map(category => category.get({plain: true }));
+        res.render('consoles', {category});
+        })
+        .catch(err => {
+        console.log(err);
+        res.status(500).json(err);
+    });
+});
+
+router.get('/login', (req, res) => {
+    if (req.session.loggedIn) {
+        res.redirect('/');
+        return;
+    }
+    res.render('login');
+});  
 
 router.get('/signup', (req, res) => {
   res.render('signup');
 });
 
-
+module.exports = router;
