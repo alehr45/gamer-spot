@@ -1,40 +1,14 @@
-<div class="nav"></div>
-<nav class="level">
-    <p class="level-item has-text-centered">
-        <a class="link is-info">Games</a>
-    </p>
-    <p class="level-item has-text-centered">
-        <a class="link is-info">Consoles</a>
-    </p>
-    <p class="level-item has-text-centered">
-        <a class="link is-info">Buy/Sell</a
-    </p>
-    <p class="level-item has-text-centered">
-        <a class=" gamerspot">GamerSpot</a>
-    </p>
-    <p class="level-item has-text-centered">
-        <a class="link is-info">Accessories</a>
-    </p>
-    <p class="level-item has-text-centered">
-        <a class="link is-info">Merch</a>
-    </p>
-    <p class="level-item has-text-centered">
-        <img class="cart" src="/images/cart.png" height="35px" width="35px" />
-    </p>
-</nav>
-</div>
-
 <section>
 
 <div>
+    
 </div>
 
 </section>
+<section>
 <div>
-{{#each product}} 
-{{product_name}}
-{{/each}}
-    </div>
-
-
+    {{#if (is_equal category_id 2)}}
+    {{product_name}}
+    {{/if}}
+</div>
 </section>

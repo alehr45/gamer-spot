@@ -5,12 +5,12 @@ const { Category, Product } = require('../models');
 router.get('/', (req, res) => {
   // find all categories
   Product.findAll({
-    attributes: ['category_id', 'price', 'stock', 'product_name'],
+    attributes: ['price', 'stock', 'product_name', 'category_id'],
   // be sure to include its associated Products
     include: [
       {
         model: Category,
-        attributes: ['category_name'],
+        attributes: ['category_name', 'id'],
       }
     ]
   })
@@ -23,13 +23,13 @@ router.get('/', (req, res) => {
       res.status(500).json(err);
     });
 });
-router.get('/', (req, res) => {
+router.get('/consoles', (req, res) => {
   // find all categories
   Product.findOne({
     where: {
       id: req.params.id,
     },
-    attributes: ['category_id', 'price', 'stock', 'product_name'],
+    attributes: ['price', 'stock', 'product_name', 'category_id'],
   // be sure to include its associated Products
     include: [
       {
@@ -40,7 +40,7 @@ router.get('/', (req, res) => {
   })
   .then((dbProductData) => {
     const product = dbProductData.map(product => product.get({plain: true }));
-    res.render('consoles', {product});
+    res.render('consoles/2', {product});
     })
     .catch(err => {
       console.log(err);
