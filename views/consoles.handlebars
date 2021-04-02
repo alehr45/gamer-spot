@@ -1,56 +1,22 @@
-<div class="nav"></div>
-    <nav class="level">
-        <p class="level-item has-text-centered">
-        <a class="link is-info">Games</a>
-        </p>
-        <p class="level-item has-text-centered">
-        <a class="link is-info">Consoles</a>
-        </p>
-        <p class="level-item has-text-centered">
-            <a class=" gamerspot">GamerSpot</a>
-        </p>
-        <p class="level-item has-text-centered">
-        <a class="link is-info">Accessories</a>
-        </p>
-        <p class="level-item has-text-centered">
-        <a class="link is-info">Merch</a>
-        </p>
-    </nav>
-</div>
-
-<div class="columns">
-      {{#each product}}
-    {{#if (is_equal category_id 2)}}
-  <div class="column">
-        {{product_name}}
-  </div>
-      {{/if}}
-    {{/each}}
-</div>
-    
-    
-<div class="columns">
-  <div class="column">
-    First column
-  </div>
-  <div class="column">
-    Second column
-  </div>
-  <div class="column">
-    Third column
-  </div>
-  <div class="column">
-    Fourth column
-  </div>
-    <div class="column">
-    fifth column
-  </div>
-  <div class="column">
-    sixth column
-  </div>
-</div>
+{{> nav}}
 
 
+
+
+<div class="container">
+
+  {{#each product}}
+  {{#if (is_equal category_id 2)}}
+  <div class="notification is-secondary" class="box">
     
+    {{product_name}} ${{price}}
+    <button class="button2">Add to Cart</button>
+    </div>
     
+  {{/if}}
+  {{/each}}
+
 </div>
+</div>
+
+{{> footer}}
