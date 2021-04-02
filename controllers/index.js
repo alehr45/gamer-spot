@@ -2,11 +2,15 @@ const router = require('express').Router();
 const apiRoutes = require('./api');
 const homeRoutes = require('./home-routes.js');
 const consoleRoutes = require('./console-routes.js');
+const shopRoutes = require('./shop-routes');
+const gameRoutes = require('./game-routes')
 
 router.use('/api', apiRoutes);
 router.use('/consoles', consoleRoutes);
 router.use('/', homeRoutes);
 router.use('/consoles', consoleRoutes);
+router.use('/shop', shopRoutes)
+router.use('/games', gameRoutes)
 
 router.use((req, res) => {
   res.send("<h1>Wrong Route!</h1>")
