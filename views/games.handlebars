@@ -1,14 +1,26 @@
+
 {{> nav}}
 
+<div class="container">
 
-<div class="rows">
-      {{#each product}}
-    {{#if (is_equal category_id 3)}}
-  <div class="row">
-        {{product_name}}
-  </div>
-      {{/if}}
-    {{/each}}
+  {{#each product}}
+  {{#if (is_equal category_id 3)}}
+  <div class="notification is-secondary" class="box">
+    
+    {{product_name}} - ${{price}} 
+    
+    <button class="button2">Add to Cart</button>
+    </div>
+    
+  {{/if}}
+  {{/each}}
+
+
+
 </div>
+<h1 class="game" id="game1">Game</h1>
+</div>
+
+<script src="/javascript/api.js"></script>
 
 {{> footer}}
