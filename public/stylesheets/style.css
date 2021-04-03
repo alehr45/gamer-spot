@@ -3,6 +3,13 @@
   src: url("../fonts/HEMIHEAD.TTF");
 }
 
+@font-face {
+  font-family:Osans;
+  src: url("../fonts/NexaRustSans-Black.otf");
+}
+
+
+
 .title {
   text-align: center;
   font-family: monospace;
@@ -12,7 +19,7 @@
 }
 
 .level {
-  background-color: rgb(48, 48, 48);
+  background-color: rgb(41, 41, 41);
 }
 
 .cart {
@@ -25,11 +32,18 @@ padding-bottom: 20px;
 display: flex;
 justify-content: center;
 }
+
 .gamerspot {
   font-family: Hemi;
   padding-top: 30px;
   font-size: 70px;
   color: lawngreen;
+}
+
+.game {
+  font-size: 25px;
+  color: white;
+  text-align: center;
 }
 
 .link.is-info {
@@ -39,13 +53,74 @@ justify-content: center;
   color: whitesmoke;
 }
 
+.input.choice {
+text-align: center;
+
+}
+
+.whats {
+color: rgb(205, 205, 205);
+text-align: center;
+
+}
+
 .footer1 {
+  width: 100%;
   font-size: 15px;
   font-family: Hemi;
   color: whitesmoke;
   padding-top: 40px;
-  background-color: rgb(48, 48, 48);
+  background-color: rgb(41, 41, 41);
   height: 100px;
+}
+
+.box {
+  background-color: rgb(191, 190, 190);
+}
+
+
+body {
+background-color:rgb(58, 58, 58)
+}
+  
+.button2 {
+
+  border-radius: 10px 10px 10px 10px ;
+}
+
+
+.notification.is-secondary{
+background-color: rgb(174, 174, 174);
+color: rgb(31, 31, 31);
+text-align: center;
+font-size: 18px;
+font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+
+.container {
+padding-top: 15px;
+padding-bottom: 15px;
+border-radius: 10px 10px 10px 10px ;
+padding-left: 55px;
+padding-right: 55px;
+background-color: :rgb(58, 58, 58)
+}
+
+.control {
+padding: 15px;
+display: flex;
+justify-content: center;
+
+}
+.button2 {
+  margin-left: 8px;
+  padding-bottom: 4px;
+  border-radius: ;
+  padding: 4px;
+
+background-color: rgb(38, 233, 8);
 }
 
 .form-input{
@@ -55,7 +130,7 @@ justify-content: center;
 }
 
 .login-link {
-  font-family: Hemi;
+  font-family: Osans;
   font-size: 25px;
   color: rgb(81, 159, 4);
   padding-left: 10px;

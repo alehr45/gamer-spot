@@ -1,0 +1,16 @@
+{{> nav}}
+
+<div class="container">
+
+  {{#each product}}
+  {{#if (is_equal category_id 4)}}
+  <div class="notification is-secondary" class="box">
+    
+    {{product_name}} - ${{price}}
+    <button class="button2">Add to Cart</button>
+    </div>
+    
+  {{/if}}
+  {{/each}}
+
+{{> footer}}
