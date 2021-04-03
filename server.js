@@ -9,8 +9,6 @@ const publicPath = path.resolve(__dirname, "public");
 const session = require('express-session');
 const app = express();
 const PORT = process.env.PORT || 3001;
-const helpers = require('./utils/helpers');
-const hbs = exphbs.create({ helpers });
 
 
 
