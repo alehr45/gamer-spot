@@ -2,8 +2,6 @@
   font-family: Hemi;
   src: url("../fonts/HEMIHEAD.TTF");
 }
-<<<<<<< HEAD
-=======
 
 @font-face {
   font-family:Osans;
@@ -12,7 +10,6 @@
 
 
 
->>>>>>> 3bdbdeff85678422fdd637c8f11dd2ae12c2e5a5
 .title {
   text-align: center;
   font-family: monospace;
@@ -38,8 +35,6 @@ justify-content: center;
   font-size: 70px;
   color: lawngreen;
 }
-<<<<<<< HEAD
-=======
 
 .game {
   font-size: 25px;
@@ -47,15 +42,12 @@ justify-content: center;
   text-align: center;
 }
 
->>>>>>> 3bdbdeff85678422fdd637c8f11dd2ae12c2e5a5
 .link.is-info {
   font-family: Hemi;
   padding-top: 30px;
   font-size: 25px;
   color: whitesmoke;
 }
-<<<<<<< HEAD
-=======
 
 .input.choice {
 text-align: center;
@@ -68,7 +60,6 @@ text-align: center;
 
 }
 
->>>>>>> 3bdbdeff85678422fdd637c8f11dd2ae12c2e5a5
 .footer1 {
   width: 100%;
   font-size: 15px;
@@ -87,17 +78,10 @@ text-align: center;
 body {
 background-color:rgb(58, 58, 58)
 }
-<<<<<<< HEAD
-
-.button2 {
-
-  border-radius: 6px 6px 6px 6px ;
-=======
   
 .button2 {
 
   border-radius: 10px 10px 10px 10px ;
->>>>>>> 3bdbdeff85678422fdd637c8f11dd2ae12c2e5a5
 }
 
 
@@ -105,33 +89,13 @@ background-color:rgb(58, 58, 58)
 background-color: rgb(174, 174, 174);
 color: rgb(31, 31, 31);
 text-align: center;
-<<<<<<< HEAD
-font-size: 20px;
-font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
-=======
 font-size: 18px;
 font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
->>>>>>> 3bdbdeff85678422fdd637c8f11dd2ae12c2e5a5
 
 }
 
 
 .container {
-<<<<<<< HEAD
-  padding-top: 15px;
-  padding-bottom: 15px;
-  border-radius: 10px 10px 10px 10px ;
-padding-left: 25px;
-padding-right: 25px;
-background-color: :rgb(58, 58, 58)
-}
-
-.button2 {
-  border-radius: ;
-  padding: 8px;
-
-background-color: lawngreen;
-=======
 padding-top: 15px;
 padding-bottom: 15px;
 border-radius: 10px 10px 10px 10px ;
@@ -153,7 +117,6 @@ justify-content: center;
   padding: 4px;
 
 background-color: rgb(38, 233, 8);
->>>>>>> 3bdbdeff85678422fdd637c8f11dd2ae12c2e5a5
 }
 
 .form-input{
