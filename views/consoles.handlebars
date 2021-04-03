@@ -4,11 +4,15 @@
 <div class="container">
 
   {{#each product}}
+  
   {{#if (is_equal category_id 2)}}
+
   <div class="notification is-secondary" class="box">
-    
-    <span class='title'>{{product_name}}</span> - <span class='price'>${{price}}</span>
+     
+    {{product_name}} - ${{price}}  -  {{stock}} in stock
+  
     <button class="button2">Add to Cart</button>
+   
     </div>
     
   {{/if}}

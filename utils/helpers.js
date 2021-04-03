@@ -4,4 +4,8 @@ module.exports = {
           return true
         }
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> a2ba3cb1befb4bb9aa849c9b76b253368c1d7a81
