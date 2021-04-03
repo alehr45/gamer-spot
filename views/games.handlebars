@@ -7,6 +7,10 @@
   {{#if (is_equal category_id 3)}}
   <div class="notification is-secondary"  class="columns">
 
+    <div class="notification is-secondary" id="name" class="box">
+        {{product_name}} - ${{price}} 
+    </div>
+
     <div class="column">
         <img class="image pb-4" id="game-pic" src="">
       
@@ -20,9 +24,8 @@
         </div>
       </div>
 
-      <div class="notification is-secondary" id="name" class="box">
-        {{product_name}} - ${{price}} 
 
+      <div class="notification is-secondary" class="box">
         <button class="button2">Add to Cart</button>
       </div>
 
