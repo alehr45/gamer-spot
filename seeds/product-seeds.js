@@ -39,21 +39,63 @@ const productData = [
   },
   {
     product_name: 'Teddy Bear',
-    price: 59.99,
+    price: 10.99,
     stock: 25,
     category_id: 4,
   },
   {
     product_name: 'T-shirt',
-    price: 59.99,
+    price: 18.99,
     stock: 25,
     category_id: 4,
   },
   {
     product_name: 'Hat',
-    price: 59.99,
+    price: 14.99,
     stock: 25,
     category_id: 4,
+  },
+  {
+    product_name: 'Action Figures',
+    price: 21.99,
+    stock: 50,
+    category_id: 4
+  },
+  {
+    product_name: 'Star Wars Replica Lightsaber',
+    price: 34.99,
+    stock: 40,
+    category_id: 4
+  },
+  {
+    product_name: 'Pokemon Cards',
+    price: 19.99,
+    stock: 100,
+    category_id: 4
+  },
+  {
+    product_name: 'The Legend of Zelda: Hyrule Map Puzzle',
+    price: 9.99,
+    stock: 20,
+    category_id: 4
+  },
+  {
+    product_name: 'Alienware Vindicator Laptop Bag',
+    price: 34.99,
+    stock: 25,
+    category_id: 4
+  },
+  {
+    product_name: 'Super Mario Back Pack',
+    price: 29.98,
+    stock: 15,
+    category_id: 4
+  },
+  {
+    product_name: 'Baby Yoda Key Chain',
+    price: 6.99,
+    stock: 100,
+    category_id: 4
   },
   {
     product_name: 'The Legend of Zelda: Breath of the Wild',
