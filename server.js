@@ -3,12 +3,22 @@ const routes = require('./controllers');
 const exphbs = require('express-handlebars');
 const sequelize = require('./config/connection');
 const path = require('path');
+const helpers = require('./utils/helpers');
+const hbs = exphbs.create({ helpers});
 const publicPath = path.resolve(__dirname, "public");
 const session = require('express-session');
 const app = express();
 const PORT = process.env.PORT || 3001;
+<<<<<<< HEAD
 const helpers = require('./utils/helpers');
 const hbs = exphbs.create({ helpers });
+=======
+
+
+
+
+
+>>>>>>> a9d5045082d4599fc893587a2dc0adc04a947cfd
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
 const sess = {

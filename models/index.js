@@ -11,8 +11,15 @@ Category.hasMany(Product, {
     foreignKey: 'category_id'
 });
 
+Product.belongsTo(User, {
+  constraints: true,
+  onDelete: 'CASCADE'
+});
+
+
 module.exports = {
   Category,
   Product,
   User
 };
+

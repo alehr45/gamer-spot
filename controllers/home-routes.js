@@ -66,4 +66,8 @@ router.get('/signup', (req, res) => {
   res.render('signup');
 });
 
+router.get('/consoles', (req, res) => {
+  res.render('consoles');
+});
+
 
