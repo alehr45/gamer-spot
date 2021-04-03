@@ -5,24 +5,34 @@
 
   {{#each product}}
   {{#if (is_equal category_id 3)}}
-  <div class="notification is-secondary" class="box">
-    
-    <img class="image" id="game-details" src="">
-      
+  <div class="notification is-secondary"  class="columns">
 
-    {{product_name}} - ${{price}} 
-    
-    <button class="button2">Add to Cart</button>
+    <div class="column">
+        <img class="image pb-4" id="game-pic" src="">
+      
+  
+      <div class="columns is-mobile">
+        <div class="column">
+          <img class="image" id="secondary-pic" src="">
+        </div>
+        <div class="column">
+          <div class="content is-size-7 is-family-sans-serif has-text-weight-bold" id="description"></div>
+        </div>
+      </div>
+
+      <div class="notification is-secondary" id="name" class="box">
+        {{product_name}} - ${{price}} 
+
+        <button class="button2">Add to Cart</button>
+      </div>
+
     </div>
-    
+  </div>
   {{/if}}
   {{/each}}
 
 
 
-</div>
-<h1 class="game" id="game1">Game</h1>
-</div>
 
 <script src="/javascript/api.js"></script>
 
