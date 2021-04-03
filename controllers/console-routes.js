@@ -38,7 +38,7 @@ router.get('/consoles/:id', (req, res) => {
   })
   .then((dbProductData) => {
     const product = dbProductData.map(product => product.get({plain: true }));
-    res.render('consoles', {product});
+    res.render('consoles/2', {product});
     })
     .catch(err => {
       console.log(err);

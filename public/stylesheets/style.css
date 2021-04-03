@@ -4,8 +4,13 @@
 }
 
 @font-face {
+<<<<<<< HEAD
+  font-family:Osans;
+  src: url("../fonts/NexaRustSans-Black.otf");
+=======
   font-family:boots;
   src: url("../fonts/Exo2.0-ExtraBold.otf");
+>>>>>>> a2ba3cb1befb4bb9aa849c9b76b253368c1d7a81
 }
 
 
@@ -58,6 +63,8 @@ text-align: center;
 
 }
 
+<<<<<<< HEAD
+=======
 .welcome {
 color: rgb(83, 164, 3);
 font-family: Hemi;
@@ -70,6 +77,7 @@ text-align: center;
   background-color: rgb(61, 104, 18);
 }
 
+>>>>>>> a2ba3cb1befb4bb9aa849c9b76b253368c1d7a81
 .whats {
 color: rgb(205, 205, 205);
 text-align: center;
@@ -91,6 +99,8 @@ text-align: center;
 }
 
 
+<<<<<<< HEAD
+=======
 .login-form{
   padding-top: 10px;
   
@@ -109,11 +119,25 @@ font-size: 20px;
   background-color: lawngreen;
 }
 
+>>>>>>> a2ba3cb1befb4bb9aa849c9b76b253368c1d7a81
 body {
 background-color:rgb(58, 58, 58)
 }
   
 .button2 {
+<<<<<<< HEAD
+
+  border-radius: 10px 10px 10px 10px ;
+}
+
+
+.notification.is-secondary{
+background-color: rgb(174, 174, 174);
+color: rgb(31, 31, 31);
+text-align: center;
+font-size: 18px;
+font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+=======
   font-size: 15px;
 background-color: rgb(80, 160, 0);
   border-radius: 6px 6px 6px 6px ;
@@ -155,6 +179,7 @@ font-size: 105x;rgb(80, 160, 0);
 display:inline;
 
 
+>>>>>>> a2ba3cb1befb4bb9aa849c9b76b253368c1d7a81
 
 }
 
@@ -180,11 +205,15 @@ justify-content: center;
   border-radius: ;
   padding: 4px;
 
+<<<<<<< HEAD
+background-color: rgb(38, 233, 8);
+=======
 background-color: rgb(237, 214, 43);
 }
 
 .button.is-primary {
   background-color: black;
+>>>>>>> a2ba3cb1befb4bb9aa849c9b76b253368c1d7a81
 }
 
 .form-input{
