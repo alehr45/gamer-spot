@@ -4,8 +4,8 @@
 }
 
 @font-face {
-  font-family:Osans;
-  src: url("../fonts/NexaRustSans-Black.otf");
+  font-family:boots;
+  src: url("../fonts/Exo2.0-ExtraBold.otf");
 }
 
 
@@ -58,6 +58,18 @@ text-align: center;
 
 }
 
+.welcome {
+color: rgb(83, 164, 3);
+font-family: Hemi;
+font-size: 26px;
+text-align: center;
+  
+}
+
+.button.is-primary {
+  background-color: rgb(61, 104, 18);
+}
+
 .whats {
 color: rgb(205, 205, 205);
 text-align: center;
@@ -79,22 +91,70 @@ text-align: center;
 }
 
 
+.login-form{
+  padding-top: 10px;
+  
+}
+.login2 { 
+  padding-left: 10px;
+  padding-top: 15px;
+font-size: 20px;
+  font-family: Hemi;
+  color: black;
+}
+
+.btn {
+  font-family: Hemi;
+font-size: 20px;
+  background-color: lawngreen;
+}
+
 body {
 background-color:rgb(58, 58, 58)
 }
   
 .button2 {
-
-  border-radius: 10px 10px 10px 10px ;
+  font-size: 15px;
+background-color: rgb(80, 160, 0);
+  border-radius: 6px 6px 6px 6px ;
 }
 
+.button3 {
+  margin-left: 20px;
+  color: rgb(116, 116, 116);
+  border-radius: 6px 6px 6px 6px ;
+  padding: 6px;
+  font-family: Hemi;
+font-size: 25px;
+  background-color: lawngreen;
+}
+
+.login { 
+  padding-left: 10px;
+  padding-top: 15px;
+font-size: 20px;
+  font-family: Hemi;
+  color: black;
+}
 
 .notification.is-secondary{
 background-color: rgb(174, 174, 174);
-color: rgb(31, 31, 31);
+color: rgb(44, 63, 58);
 text-align: center;
 font-size: 18px;
-font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+font-family:'boots';
+
+}
+
+.button.is-secondary{
+  margin-top: 10px;
+  margin-left: 20px;
+padding-left: 20px;
+background-color: rgb(61, 179, 38);
+font-size: 105x;rgb(80, 160, 0);
+display:inline;
+
+
 
 }
 
@@ -120,7 +180,11 @@ justify-content: center;
   border-radius: ;
   padding: 4px;
 
-background-color: rgb(38, 233, 8);
+background-color: rgb(237, 214, 43);
+}
+
+.button.is-primary {
+  background-color: black;
 }
 
 .form-input{
@@ -137,9 +201,13 @@ background-color: rgb(38, 233, 8);
 }
 
 .form-label {
-  display: flex;
-  padding: 2px;
-margin: 2px;
+  
+  font-family: Hemi;
+  padding: 15px;
+
+
+ 
+
 }
 
 .card-header {
