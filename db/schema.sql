@@ -1,4 +1,7 @@
 -- DROP DATABASE
+
+
+
 DROP DATABASE IF EXISTS gamerspot_db;
 
 -- CREATE DATABASE
