@@ -26,10 +26,10 @@ https://gamer-spot-45.herokuapp.com/
 ![Alt text](/screenshot.png?raw=true "Optional Title")
 
 ### **Contributors**  
-@Zakonik13 
-@alehr45
-@JWelch775
-@fthompson24
+##### @Zakonik13 
+##### @alehr45
+##### @JWelch775
+##### @fthompson24
 
 
 ### **Technologies**  
