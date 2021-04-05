@@ -8,7 +8,8 @@
   <div class="notification is-secondary"  class="columns">
 
     <div class="notification is-secondary" id="name" class="box">
-        {{product_name}} - ${{price}} 
+        <span class="title">{{product_name}}</span> - <span class="price">${{price}}</span> 
+        <button class="button2">Add to Cart</button>
     </div>
 
     <div class="column">
@@ -24,29 +25,14 @@
         </div>
       </div>
 
-
-      <div class="notification is-secondary" class="box">
-        <button class="button2">Add to Cart</button>
-      </div>
-
     </div>
   </div>
   {{/if}}
   {{/each}}
 
+{{> cart}}
 
-
-<<<<<<< HEAD
-</div>
-<h1 class="game" id="game1">Game</h1>
-</div>
-
+<script src="/javascript/cart.js"></script>
 <script src="/javascript/api.js"></script>
 
 {{> footer}}
-=======
-
-<script src="/javascript/api.js"></script>
-
-{{> footer}}
->>>>>>> a2ba3cb1befb4bb9aa849c9b76b253368c1d7a81
