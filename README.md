@@ -8,7 +8,6 @@
 * [Installation](#installation)
 * [Contributors](#contributors)
 * [Technologies](#Technologies)
-* [Licensing](#Licenses)
 * [Contact](#questions)
 
 ========================
