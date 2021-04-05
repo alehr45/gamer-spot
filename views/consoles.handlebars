@@ -11,7 +11,7 @@
 
   <div class="notification is-secondary" class="box">
      
-    {{product_name}} - ${{price}}  -  {{stock}} in stock
+    <span class="title">{{product_name}}</span> - <span class="price">{{price}}</span>$  -  {{stock}} in stock
   
     <button class="button2">Add to Cart</button>
    
@@ -24,13 +24,10 @@
 
 {{> cart}}
 
-</div>
-
-</div>
-
-<script src="/javascript/api.js"></script>
-
-
 
 {{> footer}}
+
+<script src="/javascript/cart.js"></script>
+
+<script src="/javascript/api.js"></script>
 

@@ -6,7 +6,7 @@
   {{#if (is_equal category_id 4)}}
   <div class="notification is-secondary" class="box">
     
-    {{product_name}} - ${{price}}
+    <span class="title">{{product_name}}</span> - <span class="price">${{price}}</span> 
     <button class="button2">Add to Cart</button>
     </div>
     
@@ -16,5 +16,8 @@
 </div>
 </div>
 
-<script src="/javascript/api.js"></script>
+{{> cart}}
 {{> footer}}
+
+<script src="/javascript/api.js"></script>
+<script src="/javascript/cart.js"></script>
