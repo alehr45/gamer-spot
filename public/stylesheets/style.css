@@ -4,16 +4,14 @@
 }
 
 @font-face {
-<<<<<<< HEAD
   font-family:Osans;
   src: url("../fonts/NexaRustSans-Black.otf");
-=======
-  font-family:boots;
-  src: url("../fonts/Exo2.0-ExtraBold.otf");
->>>>>>> a2ba3cb1befb4bb9aa849c9b76b253368c1d7a81
 }
 
-
+@font-face {
+  font-family:boots;
+  src: url("../fonts/Exo2.0-ExtraBold.otf");
+}
 
 .title {
   text-align: center;
@@ -26,16 +24,29 @@
 .level {
   background-color: rgb(41, 41, 41);
 }
+.contact {
+  font-family: Hemi;
+  text-align: center;
+  font-size: 35px;
+  color: antiquewhite;
+}
 
+
+.link4 {
+  font-family: Hemi;
+display: flex;
+justify-content: center;
+  font-size: 35px;
+  color: rgb(70, 208, 58);
+}
 .cart {
-
   padding-top: 20px;
 }
 
 .card-body {
-padding-bottom: 20px;
-display: flex;
-justify-content: center;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
 }
 
 .gamerspot {
@@ -59,29 +70,23 @@ justify-content: center;
 }
 
 .input.choice {
-text-align: center;
-
+  text-align: center;
 }
 
-<<<<<<< HEAD
-=======
 .welcome {
-color: rgb(83, 164, 3);
-font-family: Hemi;
-font-size: 26px;
-text-align: center;
-  
+  color: rgb(83, 164, 3);
+  font-family: Hemi;
+  font-size: 26px;
+  text-align: center;
 }
 
 .button.is-primary {
   background-color: rgb(61, 104, 18);
 }
 
->>>>>>> a2ba3cb1befb4bb9aa849c9b76b253368c1d7a81
 .whats {
-color: rgb(205, 205, 205);
-text-align: center;
-
+  color: rgb(205, 205, 205);
+  text-align: center;
 }
 
 .footer1 {
@@ -98,48 +103,31 @@ text-align: center;
   background-color: rgb(191, 190, 190);
 }
 
-
-<<<<<<< HEAD
-=======
 .login-form{
   padding-top: 10px;
-  
 }
+
 .login2 { 
   padding-left: 10px;
   padding-top: 15px;
-font-size: 20px;
+  font-size: 20px;
   font-family: Hemi;
   color: black;
 }
 
 .btn {
   font-family: Hemi;
-font-size: 20px;
+  font-size: 20px;
   background-color: lawngreen;
 }
 
->>>>>>> a2ba3cb1befb4bb9aa849c9b76b253368c1d7a81
 body {
-background-color:rgb(58, 58, 58)
+  background-color:rgb(58, 58, 58)
 }
   
 .button2 {
-<<<<<<< HEAD
-
-  border-radius: 10px 10px 10px 10px ;
-}
-
-
-.notification.is-secondary{
-background-color: rgb(174, 174, 174);
-color: rgb(31, 31, 31);
-text-align: center;
-font-size: 18px;
-font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-=======
   font-size: 15px;
-background-color: rgb(80, 160, 0);
+  background-color: lawngreen;
   border-radius: 6px 6px 6px 6px ;
 }
 
@@ -149,77 +137,64 @@ background-color: rgb(80, 160, 0);
   border-radius: 6px 6px 6px 6px ;
   padding: 6px;
   font-family: Hemi;
-font-size: 25px;
+  font-size: 25px;
   background-color: lawngreen;
 }
 
 .login { 
   padding-left: 10px;
   padding-top: 15px;
-font-size: 20px;
+  font-size: 20px;
   font-family: Hemi;
   color: black;
 }
 
 .notification.is-secondary{
-background-color: rgb(174, 174, 174);
-color: rgb(44, 63, 58);
-text-align: center;
-font-size: 18px;
-font-family:'boots';
-
+  background-color: rgb(174, 174, 174);
+  color: rgb(44, 63, 58);
+  text-align: center;
+  font-size: 18px;
+  font-family:'boots';
 }
 
 .button.is-secondary{
   margin-top: 10px;
   margin-left: 20px;
-padding-left: 20px;
-background-color: rgb(61, 179, 38);
-font-size: 105x;rgb(80, 160, 0);
-display:inline;
-
-
->>>>>>> a2ba3cb1befb4bb9aa849c9b76b253368c1d7a81
-
+  padding-left: 20px;
+  background-color: lawngreen;
+  font-size: 105x;rgb(80, 160, 0);
+  display:inline;
 }
 
-
 .container {
-padding-top: 15px;
-padding-bottom: 15px;
-border-radius: 10px 10px 10px 10px ;
-padding-left: 55px;
-padding-right: 55px;
-background-color: :rgb(58, 58, 58)
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 10px 10px 10px 10px ;
+  padding-left: 55px;
+  padding-right: 55px;
+  background-color: rgb(58, 58, 58)
 }
 
 .control {
-padding: 15px;
-display: flex;
-justify-content: center;
-
+  padding: 15px;
+  display: flex;
+  justify-content: center;
 }
+
 .button2 {
   margin-left: 8px;
   padding-bottom: 4px;
-  border-radius: ;
   padding: 4px;
-
-<<<<<<< HEAD
-background-color: rgb(38, 233, 8);
-=======
-background-color: rgb(237, 214, 43);
+  background-color: lawngreen;
 }
 
 .button.is-primary {
   background-color: black;
->>>>>>> a2ba3cb1befb4bb9aa849c9b76b253368c1d7a81
 }
 
 .form-input{
   padding-right: 10px;
   padding-left: 10px;
-
 }
 
 .login-link {
@@ -230,13 +205,8 @@ background-color: rgb(237, 214, 43);
 }
 
 .form-label {
-  
   font-family: Hemi;
   padding: 15px;
-
-
- 
-
 }
 
 .card-header {
@@ -249,20 +219,19 @@ background-color: rgb(237, 214, 43);
 
 .consoles {
   padding-top: 20px;
-display: flex;
+  display: flex;
   justify-content: space-evenly;
 }
 
 .banner {
-    width: 100%;
-   
+  width: 100%; 
 }
- .access {
-     padding-bottom: 25px;
-     padding-right: 25px;
- }
 
- .merch {
-    padding-bottom: 25px;
+.access {
+  padding-bottom: 25px;
+  padding-right: 25px;
+}
 
- }
+.merch {
+  padding-bottom: 25px;
+}
