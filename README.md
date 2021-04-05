@@ -33,11 +33,11 @@ https://gamer-spot-45.herokuapp.com/
 
 
 ### **Technologies**  
-mySQl
-dotENV
-Handlebars
-Bulma
-rawg API
+###### mySQl
+###### dotENV
+###### Handlebars
+###### Bulma
+###### rawg API
 
 
 ========================
