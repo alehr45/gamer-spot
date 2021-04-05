@@ -7,7 +7,7 @@
 * [Description](#description)
 * [Installation](#installation)
 * [Contributors](#contributors)
-* [Testing](#Testing)
+* [Technologies](#Technologies)
 * [Licensing](#Licenses)
 * [Contact](#questions)
 
@@ -26,20 +26,23 @@ https://gamer-spot-45.herokuapp.com/
 ![Alt text](/screenshot.png?raw=true "Optional Title")
 
 ### **Contributors**  
-alehr45
+@Zakonik13 
+@alehr45
+@JWelch775
+@fthompson24
 
-### **Testing**  
-N/A
 
-### **License**  
-![badge](https://img.shields.io/badge/license-Mozilla-brightgreen)  
+### **Technologies**  
+mySQl
+dotENV
+Handlebars
+Bulma
+rawg API
 
-This application is covered by the Mozilla license. 
 
 ========================
 
 ### Questions?
-##### Email: alehr45@gmail.com
 ##### GitHub: www.github.com/alehr45  
 
 ========================
