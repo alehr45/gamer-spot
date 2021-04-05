@@ -24,7 +24,21 @@
 .level {
   background-color: rgb(41, 41, 41);
 }
+.contact {
+  font-family: Hemi;
+  text-align: center;
+  font-size: 35px;
+  color: antiquewhite;
+}
 
+
+.link4 {
+  font-family: Hemi;
+display: flex;
+justify-content: center;
+  font-size: 35px;
+  color: rgb(70, 208, 58);
+}
 .cart {
   padding-top: 20px;
 }
