@@ -23,7 +23,7 @@ An online gaming store using mySQL and handlebars. User can login, buy and sell 
 https://gamer-spot-45.herokuapp.com/
 
 ### **Usage**  
-N/A
+![Alt text](/screenshot.png?raw=true "Optional Title")
 
 ### **Contributors**  
 alehr45
