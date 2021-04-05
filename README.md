@@ -29,6 +29,7 @@ https://gamer-spot-45.herokuapp.com/
 ##### @alehr45
 ##### @JWelch775
 ##### @fthompson24
+##### @jaredtaylor
 
 
 ### **Technologies**  
