@@ -1,16 +1,9 @@
 {
-    "development": {
-      "username": "root",
-      "password": null,
-      "database": "database_development",
-      "host": "127.0.0.1",
-      "dialect": "mysql"
-    },
     "production": {
       "username": "to43zpz375k5q3hh",
-      "password": "brzs6otwl0v0smuj",
-      "database": "gamerspot_db",
-      "host": "127.0.0.1",
+      "password": "trzgl6gwmvrxxcsa",
+      "database": "o6ycrzn1oci2mepf",
+      "host": "vkh7buea61avxg07.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
       "dialect": "mysql"
     }
   }
