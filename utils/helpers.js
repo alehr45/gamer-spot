@@ -3,5 +3,11 @@ module.exports = {
         if (product === category_id) {
           return true
         }
+    },
+
+    is_same: (product, product_id) => {
+        if (product === product_id) {
+          return true
+        }
     }
 }

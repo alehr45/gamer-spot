@@ -1,7 +1,9 @@
 const router = require('express').Router();
 const sequelize = require('../config/connection');
 const { Category, Product } = require('../models');
+
 // The `/consoles` endpoints
+
 router.get('/', (req, res) => {
   // find all products
   Product.findAll({
@@ -22,6 +24,7 @@ router.get('/', (req, res) => {
       res.status(500).json(err);
     });
 });
+
 router.get('/consoles/:id', (req, res) => {
   // find one product
   Product.findOne({
@@ -45,6 +48,7 @@ router.get('/consoles/:id', (req, res) => {
       res.status(500).json(err);
     });
 });
+
 router.get('/', (req, res) => {
     // find all categories
     Category.findAll({
@@ -65,6 +69,7 @@ router.get('/', (req, res) => {
         res.status(500).json(err);
     });
 });
+
 router.get('/consoles/:id', (req, res) => {
     // find one category
     Category.findOne({
@@ -88,6 +93,7 @@ router.get('/consoles/:id', (req, res) => {
         res.status(500).json(err);
     });
 });
+
 router.get('/login', (req, res) => {
     if (req.session.loggedIn) {
         res.redirect('/');
@@ -95,7 +101,9 @@ router.get('/login', (req, res) => {
     }
     res.render('login');
 });  
+
 router.get('/signup', (req, res) => {
   res.render('signup');
 });
+
 module.exports = router;

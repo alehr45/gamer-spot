@@ -7,20 +7,23 @@
   {{#if (is_equal category_id 3)}}
   <div class="notification is-secondary"  class="columns">
 
-    <div class="notification is-secondary" id="name" class="box">
-        {{product_name}} - ${{price}} 
+    <div class="notification is-secondary name">
+        {{product_name}} - ${{price}}
+        <div id="555">
+
+        </div>
     </div>
 
     <div class="column">
-        <img class="image pb-4" id="game-pic" src="">
+        
       
   
-      <div class="columns is-mobile">
+      <div class="columns is-mobile" >
         <div class="column">
-          <img class="image" id="secondary-pic" src="">
+          <img class="image game-pic" src="">
         </div>
         <div class="column">
-          <div class="content is-size-7 is-family-sans-serif has-text-weight-bold" id="description"></div>
+          <div class="content is-size-7 is-family-sans-serif has-text-weight-bold description"></div>
         </div>
       </div>
 
@@ -36,7 +39,6 @@
 
 
 
-<<<<<<< HEAD
 </div>
 <h1 class="game" id="game1">Game</h1>
 </div>
@@ -44,9 +46,16 @@
 <script src="/javascript/api.js"></script>
 
 {{> footer}}
-=======
+{{!-- <script id="example-template" type="text/x-handlebars-template"></script>
 
-<script src="/javascript/api.js"></script>
+{{#each product}}
+  {{#if (is_equal category_id 3)}}
+    <p>{{product_name}}</p>
+  {{/if}}
+{{/each}}
 
-{{> footer}}
->>>>>>> a2ba3cb1befb4bb9aa849c9b76b253368c1d7a81
+{{#each people}}
+<p>{{gameName}}</p>
+{{/each}}
+
+</script> --}}
