@@ -44,5 +44,4 @@ https://gamer-spot-45.herokuapp.com/
 
 ### Questions?
 ##### GitHub: www.github.com/alehr45  
-
 ========================
