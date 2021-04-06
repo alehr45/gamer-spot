@@ -7,9 +7,9 @@
   <div class="notification is-secondary"  class="columns">
 
     <div class="notification is-secondary" id="name" class="box">
-        <span class="title">{{product_name}}</span> - <span class="price">${{price}}</span> 
-        <button class="button2">Add to Cart</button>
-    </div>
+        <span class="title">{{product_name}}</span><span class="price">${{price}}</span> -{{stock}} in stock 
+    <a href="#cart" class="button2">Add to Cart</a>
+   </div>
 
     <div class="column">
         <img class="image pb-4" id="game-pic" src="">
@@ -29,8 +29,10 @@
   {{/if}}
   {{/each}}
 
-{{> cart}}
+</div>
 
+</div>
+{{> cart}}
 
 {{> footer}}
 

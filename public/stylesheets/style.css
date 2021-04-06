@@ -13,6 +13,73 @@
   src: url("../fonts/Exo2.0-ExtraBold.otf");
 }
 
+.section-header{
+  display: flex;
+  justify-content: center;
+font-family: Hemi;
+color: rgb(255, 225, 0);
+font-size: 45px;
+
+}
+.cart-price{
+  font-size: 20px;
+  color: rgb(255, 225, 0);
+ }
+
+.btn.btn-primary.btn-purchase{
+  background-color: rgb(255, 225, 0);
+  font-family: boots;
+  font-size: 20px;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.button.is-success{
+  color: green;
+  text-align: center;
+}
+.btn.btn-danger{
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+.cart1{
+  width: 200px;
+}
+
+.cart-header{
+  color: white;
+}
+
+.cart-total-title{
+  font-family: Hemi;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  font-size: 35px;
+  color: white;
+}
+
+.cart-quantity-input{
+  width: 50px;
+  padding: 5px;
+  margin: 10px;
+}
+
+.cart-item-title{
+  padding-top: 15px;
+  font-size: 25px;
+  color: white;
+}
+
+.cart-total-price{
+  display: flex;
+  justify-content: center;
+ margin: 5px;
+  color: rgb(255, 225, 0);
+  font-size: 25px;
+}
+
 .title {
   text-align: center;
   font-family: monospace;
@@ -24,13 +91,13 @@
 .level {
   background-color: rgb(41, 41, 41);
 }
+
 .contact {
   font-family: Hemi;
   text-align: center;
   font-size: 35px;
   color: antiquewhite;
 }
-
 
 .link4 {
   font-family: Hemi;
@@ -103,9 +170,6 @@ justify-content: center;
   background-color: rgb(191, 190, 190);
 }
 
-.login-form{
-  padding-top: 10px;
-}
 
 .login2 { 
   padding-left: 10px;
@@ -126,7 +190,8 @@ body {
 }
   
 .button2 {
-  font-size: 15px;
+  text-decoration: none;
+  font-size: 18px;
   background-color: lawngreen;
   border-radius: 6px 6px 6px 6px ;
 }
@@ -146,7 +211,7 @@ body {
   padding-top: 15px;
   font-size: 20px;
   font-family: Hemi;
-  color: black;
+  color:antiquewhite
 }
 
 .notification.is-secondary{
@@ -192,10 +257,6 @@ body {
   background-color: black;
 }
 
-.form-input{
-  padding-right: 10px;
-  padding-left: 10px;
-}
 
 .login-link {
   font-family: Osans;
@@ -205,6 +266,8 @@ body {
 }
 
 .form-label {
+  font-size: 20px;
+  color: antiquewhite;
   font-family: Hemi;
   padding: 15px;
 }
@@ -215,6 +278,11 @@ body {
   font-family: Hemi;
   font-size: 40px;
   padding: 20px;
+}
+
+.card-body{
+  padding-top: 20px;
+  background-color: grey;
 }
 
 .consoles {
@@ -234,4 +302,11 @@ body {
 
 .merch {
   padding-bottom: 25px;
+}
+
+.btn.btn-danger{
+  font-family: boots;
+  font-size: 15px;
+  border-radius: 10px 10px 10px 10px;
+
 }
