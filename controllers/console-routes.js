@@ -1,10 +1,11 @@
 const router = require('express').Router();
 const sequelize = require('../config/connection');
 const { Category, Product } = require('../models');
+const withAuth = require('../utils/auth');
 
 // The `/consoles` endpoints
 
-router.get('/', (req, res) => {
+router.get('/', withAuth, (req, res) => {
   // find all products
   Product.findAll({
     attributes: ['category_id', 'price', 'stock', 'product_name'],
@@ -25,7 +26,7 @@ router.get('/', (req, res) => {
     });
 });
 
-router.get('/consoles/:id', (req, res) => {
+router.get('/consoles/:id', withAuth, (req, res) => {
   // find one product
   Product.findOne({
     where: {
@@ -49,7 +50,7 @@ router.get('/consoles/:id', (req, res) => {
     });
 });
 
-router.get('/', (req, res) => {
+router.get('/', withAuth, (req, res) => {
     // find all categories
     Category.findAll({
         attributes: ['category_name', 'id'],
@@ -70,7 +71,7 @@ router.get('/', (req, res) => {
     });
 });
 
-router.get('/consoles/:id', (req, res) => {
+router.get('/consoles/:id', withAuth, (req, res) => {
     // find one category
     Category.findOne({
     where:{
@@ -94,7 +95,7 @@ router.get('/consoles/:id', (req, res) => {
     });
 });
 
-router.get('/login', (req, res) => {
+router.get('/login', withAuth, (req, res) => {
     if (req.session.loggedIn) {
         res.redirect('/');
         return;

@@ -6,12 +6,8 @@ const gameRoutes = require('./game-routes.js')
 const accessoryRoutes = require('./accessory-routes.js')
 const merchRoutes = require('./merchandise-routes.js')
 const sellRoutes = require('./sell-routes.js')
-const contactRoutes = require('./contact-routes.js')
-
-
 
 router.use('/api', apiRoutes);
-router.use('/contact', contactRoutes);
 router.use('/consoles', consoleRoutes);
 router.use('/', homeRoutes);
 router.use('/games', gameRoutes);
